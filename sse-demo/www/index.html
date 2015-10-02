@@ -1,7 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<title>Flights Over Toronto</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 		<script type="text/javascript" src="client.js"></script>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			#map {
+				height: 95%; /* Leave some room to open debug console */
+			}
+		</style>
 	</head>
-	<body>Hello world!</body>
+	<body>
+		<div id="map"></div>
+	</body>
 </html>
