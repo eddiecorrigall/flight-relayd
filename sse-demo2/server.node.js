@@ -62,7 +62,8 @@ sseServices.on('start', function () {
 // ##### ##### ##### ##### ##### 
 
 var sbs1Host = process.argv[2] || '127.0.0.1';
-var sbs1Client = sbs1.createClient({ host: sbs1Host }); // Listens to the SBS1 message server
+var sbs1Port = process.argv[3] || 30003;
+var sbs1Client = sbs1.createClient({ host: sbs1Host, port: sbs1Port }); // Listens to the SBS1 message server
 var sbs1LastMessage = undefined;
 
 sbs1Client.on('message', function (sbs1Message) {
